@@ -1,4 +1,4 @@
-
+install.packages("effects")
 ## Regression with binary outcomes
 ## ═════════════════════════════════
 
@@ -131,5 +131,5 @@ prdictprob <- predict(model1, type = "response", se.fit = TRUE, interval = "conf
 tbl <- cbind(predictwrk, prdictprob)
 tbl
 
-library(effects)
-plot(allEffects(mod1))
+
+plot(allEffects(model1.tab))
